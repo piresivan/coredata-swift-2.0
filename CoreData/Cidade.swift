@@ -10,7 +10,7 @@ import Foundation
 import CoreData
 
 class Cidade: AbstractEntity {
-    
+    //its the best part!
     @NSManaged var nome:String
     @NSManaged var cadastros:NSArray
     
