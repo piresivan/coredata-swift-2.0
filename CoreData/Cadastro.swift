@@ -9,6 +9,7 @@
 import Foundation
 import CoreData
 
+//its the model of names
 class Cadastro: AbstractEntity {
     
     @NSManaged var nome:String
