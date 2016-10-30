@@ -17,6 +17,8 @@ class ViewController: UIViewController {
             NSLog("%i",retorno.objects.count)
         }
         
+        //What to to now?
+        
         let variaveis:NSMutableDictionary = NSMutableDictionary()
         variaveis.setObject("Lucas", forKey: "NOME")
         let retorno2 = DataManager.getFromFetchRequest("FetchVariavel", variaveis: variaveis)
