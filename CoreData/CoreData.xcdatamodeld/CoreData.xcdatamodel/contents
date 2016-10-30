@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6220.17" systemVersion="13E28" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Cadastro" representedClassName="CoreData.Cadastro" syncable="YES">
+        <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="telefone" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <relationship name="cidade" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Cidade" inverseName="cadastro" inverseEntity="Cidade" syncable="YES"/>
+        <fetchedProperty name="rio" optional="YES" syncable="YES">
+            <fetchRequest name="fetchedPropertyFetchRequest" entity="Cadastro" predicateString="cidade.nome == &quot;Rio&quot;"/>
+        </fetchedProperty>
+    </entity>
+    <entity name="Cidade" representedClassName="CoreData.Cidade" syncable="YES">
+        <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="cadastro" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Cadastro" inverseName="cidade" inverseEntity="Cadastro" syncable="YES"/>
+        <fetchedProperty name="cadastros" optional="YES" syncable="YES">
+            <fetchRequest name="fetchedPropertyFetchRequest" entity="Cadastro" predicateString="ANY cidade == $FETCH_SOURCE"/>
+        </fetchedProperty>
+    </entity>
+    <fetchRequest name="FetchNomeContains" entity="Cadastro" predicateString="nome == &quot;Lucas&quot;"/>
+    <fetchRequest name="FetchVariavel" entity="Cadastro" predicateString="nome == $NOME"/>
+    <elements>
+        <element name="Cadastro" positionX="-54" positionY="0" width="128" height="116"/>
+        <element name="Cidade" positionX="-335" positionY="5" width="128" height="101"/>
+    </elements>
+</model>

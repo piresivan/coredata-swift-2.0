@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6206.9" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Qt9-zG-0Nc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7026.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Mmq-QX-QXf">
+            <objects>
+                <viewController id="Qt9-zG-0Nc" customClass="ViewController" customModule="CoreData" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Fzu-kx-1Bh"/>
+                        <viewControllerLayoutGuide type="bottom" id="fEJ-nB-PS2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QjG-j8-gog">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cidade" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qkt-HT-xqY">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fqi-8x-NFo">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Incluir">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="salvarCidade:" destination="Qt9-zG-0Nc" eventType="touchUpInside" id="Dxb-Iy-wz5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8rT-aP-5uK">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Consultar">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="consultarCidades:" destination="Qt9-zG-0Nc" eventType="touchUpInside" id="Ra8-u8-94V"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dFe-EG-f8w">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Alterar">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="alterarCidade:" destination="Qt9-zG-0Nc" eventType="touchUpInside" id="YM3-Zk-T4c"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XMk-cz-YGL">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Excluir">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="excluirCidade" destination="Qt9-zG-0Nc" eventType="touchUpInside" id="rCZ-lx-ELr"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cadastro" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n4z-23-20p">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hwp-Rb-fRx">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Incluir">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="incluirCadastro" destination="Qt9-zG-0Nc" eventType="touchUpInside" id="w5c-jE-hdf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ipg-aS-7Ia">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Consultar">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="consultarCadastros" destination="Qt9-zG-0Nc" eventType="touchUpInside" id="RJS-PG-PsL"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Predicate" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0xE-I6-4ZE">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hd3-3h-D97">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Pesquisa Rio">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pesquisarCidade" destination="Qt9-zG-0Nc" eventType="touchUpInside" id="N2M-z9-q3l"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UVv-OW-loF">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Fetched Properties">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="fetchTeste" destination="Qt9-zG-0Nc" eventType="touchUpInside" id="XgS-T3-5kt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iqT-3F-MgJ">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Fetch Request">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="fetchRequest" destination="Qt9-zG-0Nc" eventType="touchUpInside" id="qJW-vA-0Zh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="n4z-23-20p" secondAttribute="centerX" id="079-xs-4oG"/>
+                            <constraint firstAttribute="centerX" secondItem="iqT-3F-MgJ" secondAttribute="centerX" id="0EW-Ll-ZWK"/>
+                            <constraint firstAttribute="centerX" secondItem="hwp-Rb-fRx" secondAttribute="centerX" id="3ab-Zz-77h"/>
+                            <constraint firstItem="0xE-I6-4ZE" firstAttribute="top" secondItem="Ipg-aS-7Ia" secondAttribute="bottom" constant="9" id="7af-io-Wq4"/>
+                            <constraint firstItem="XMk-cz-YGL" firstAttribute="top" secondItem="8rT-aP-5uK" secondAttribute="bottom" constant="24" id="9c3-m1-slG"/>
+                            <constraint firstItem="hd3-3h-D97" firstAttribute="top" secondItem="0xE-I6-4ZE" secondAttribute="bottom" constant="8" id="G3p-u1-Lwb"/>
+                            <constraint firstAttribute="centerX" secondItem="0xE-I6-4ZE" secondAttribute="centerX" id="Inw-pq-Ddd"/>
+                            <constraint firstAttribute="centerX" secondItem="hd3-3h-D97" secondAttribute="centerX" id="M6i-8f-Ctw"/>
+                            <constraint firstItem="8rT-aP-5uK" firstAttribute="top" secondItem="Qkt-HT-xqY" secondAttribute="bottom" constant="35" id="QP3-h0-yd4"/>
+                            <constraint firstItem="dFe-EG-f8w" firstAttribute="top" secondItem="fqi-8x-NFo" secondAttribute="bottom" constant="25" id="Uhx-Lb-prX"/>
+                            <constraint firstItem="iqT-3F-MgJ" firstAttribute="top" secondItem="UVv-OW-loF" secondAttribute="bottom" constant="3" id="VCB-iH-SZW"/>
+                            <constraint firstItem="Ipg-aS-7Ia" firstAttribute="top" secondItem="n4z-23-20p" secondAttribute="bottom" constant="37" id="Vg8-BG-l14"/>
+                            <constraint firstItem="fqi-8x-NFo" firstAttribute="top" secondItem="Qkt-HT-xqY" secondAttribute="bottom" constant="7" id="bHM-uI-UrE"/>
+                            <constraint firstAttribute="centerX" secondItem="dFe-EG-f8w" secondAttribute="centerX" id="dLt-R4-ETs"/>
+                            <constraint firstItem="Qkt-HT-xqY" firstAttribute="top" secondItem="Fzu-kx-1Bh" secondAttribute="bottom" constant="8" id="e3n-B7-4FJ"/>
+                            <constraint firstAttribute="centerX" secondItem="XMk-cz-YGL" secondAttribute="centerX" id="ebM-Xv-BQH"/>
+                            <constraint firstAttribute="centerX" secondItem="Qkt-HT-xqY" secondAttribute="centerX" id="iWP-rL-1Qb"/>
+                            <constraint firstAttribute="centerX" secondItem="UVv-OW-loF" secondAttribute="centerX" id="lWF-30-Myc"/>
+                            <constraint firstItem="Qkt-HT-xqY" firstAttribute="centerX" secondItem="8rT-aP-5uK" secondAttribute="centerX" id="lWf-yC-M7N"/>
+                            <constraint firstAttribute="centerX" secondItem="Ipg-aS-7Ia" secondAttribute="centerX" id="nLQ-TI-JpT"/>
+                            <constraint firstItem="hwp-Rb-fRx" firstAttribute="top" secondItem="n4z-23-20p" secondAttribute="bottom" constant="8" id="pE4-ty-Crx"/>
+                            <constraint firstItem="Ipg-aS-7Ia" firstAttribute="top" secondItem="hwp-Rb-fRx" secondAttribute="bottom" constant="8" id="q4e-gO-ouf"/>
+                            <constraint firstItem="UVv-OW-loF" firstAttribute="top" secondItem="hd3-3h-D97" secondAttribute="bottom" constant="1" id="szV-PO-kiG"/>
+                            <constraint firstItem="n4z-23-20p" firstAttribute="top" secondItem="XMk-cz-YGL" secondAttribute="bottom" constant="24" id="zUG-dT-n5j"/>
+                            <constraint firstItem="Qkt-HT-xqY" firstAttribute="centerX" secondItem="fqi-8x-NFo" secondAttribute="centerX" id="zr1-Ur-edx"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Qkt-HT-xqY"/>
+                                <exclude reference="fqi-8x-NFo"/>
+                                <exclude reference="8rT-aP-5uK"/>
+                                <exclude reference="dFe-EG-f8w"/>
+                                <exclude reference="XMk-cz-YGL"/>
+                                <exclude reference="n4z-23-20p"/>
+                                <exclude reference="hwp-Rb-fRx"/>
+                                <exclude reference="Ipg-aS-7Ia"/>
+                                <exclude reference="0xE-I6-4ZE"/>
+                                <exclude reference="hd3-3h-D97"/>
+                                <exclude reference="UVv-OW-loF"/>
+                                <exclude reference="iqT-3F-MgJ"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="7af-io-Wq4"/>
+                                <exclude reference="Inw-pq-Ddd"/>
+                                <exclude reference="e3n-B7-4FJ"/>
+                                <exclude reference="iWP-rL-1Qb"/>
+                                <exclude reference="lWf-yC-M7N"/>
+                                <exclude reference="zr1-Ur-edx"/>
+                                <exclude reference="079-xs-4oG"/>
+                                <exclude reference="zUG-dT-n5j"/>
+                                <exclude reference="QP3-h0-yd4"/>
+                                <exclude reference="Vg8-BG-l14"/>
+                                <exclude reference="nLQ-TI-JpT"/>
+                                <exclude reference="q4e-gO-ouf"/>
+                                <exclude reference="lWF-30-Myc"/>
+                                <exclude reference="szV-PO-kiG"/>
+                                <exclude reference="9c3-m1-slG"/>
+                                <exclude reference="ebM-Xv-BQH"/>
+                                <exclude reference="Uhx-Lb-prX"/>
+                                <exclude reference="dLt-R4-ETs"/>
+                                <exclude reference="bHM-uI-UrE"/>
+                                <exclude reference="G3p-u1-Lwb"/>
+                                <exclude reference="M6i-8f-Ctw"/>
+                                <exclude reference="3ab-Zz-77h"/>
+                                <exclude reference="pE4-ty-Crx"/>
+                                <exclude reference="0EW-Ll-ZWK"/>
+                                <exclude reference="VCB-iH-SZW"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="Qkt-HT-xqY"/>
+                                <include reference="fqi-8x-NFo"/>
+                                <include reference="8rT-aP-5uK"/>
+                                <include reference="dFe-EG-f8w"/>
+                                <include reference="XMk-cz-YGL"/>
+                                <include reference="n4z-23-20p"/>
+                                <include reference="hwp-Rb-fRx"/>
+                                <include reference="Ipg-aS-7Ia"/>
+                                <include reference="0xE-I6-4ZE"/>
+                                <include reference="hd3-3h-D97"/>
+                                <include reference="UVv-OW-loF"/>
+                                <include reference="iqT-3F-MgJ"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="7af-io-Wq4"/>
+                                <include reference="Inw-pq-Ddd"/>
+                                <include reference="e3n-B7-4FJ"/>
+                                <include reference="iWP-rL-1Qb"/>
+                                <include reference="lWf-yC-M7N"/>
+                                <include reference="zr1-Ur-edx"/>
+                                <include reference="079-xs-4oG"/>
+                                <include reference="zUG-dT-n5j"/>
+                                <include reference="QP3-h0-yd4"/>
+                                <include reference="Vg8-BG-l14"/>
+                                <include reference="nLQ-TI-JpT"/>
+                                <include reference="q4e-gO-ouf"/>
+                                <include reference="lWF-30-Myc"/>
+                                <include reference="szV-PO-kiG"/>
+                                <include reference="9c3-m1-slG"/>
+                                <include reference="ebM-Xv-BQH"/>
+                                <include reference="Uhx-Lb-prX"/>
+                                <include reference="dLt-R4-ETs"/>
+                                <include reference="bHM-uI-UrE"/>
+                                <include reference="G3p-u1-Lwb"/>
+                                <include reference="M6i-8f-Ctw"/>
+                                <include reference="3ab-Zz-77h"/>
+                                <include reference="pE4-ty-Crx"/>
+                                <include reference="0EW-Ll-ZWK"/>
+                                <include reference="VCB-iH-SZW"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cuf-ZA-3E0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1723.5" y="52"/>
+        </scene>
+    </scenes>
+</document>
